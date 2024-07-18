@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="newvendor.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Responsive Registration Form</title> 
+    <script src="newvendor.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form class="vendorreg">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Account Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Username</label>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details personal" id="personal-details" style="display: none;">
+                    <span class="title">Vendor Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Vendor Name</label>
+                            <input type="text" id="vname" placeholder="Enter your name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number </label>
+                            <input type="tel" id="num" placeholder="Enter mobile number" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" id="place" placeholder="Enter City name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Aadhar Number</label>
+                            <input type="number" id="anum" maxlength="12" placeholder="Enter Aadhar Number" required disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID" id="company-details" style="display: none;">
+                    <span class="title">Company Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Company name</label>
+                            <input type="text" id="cname" placeholder="Enter Company name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Company ID</label>
+                            <input type="text" id="cid" placeholder="Enter ID number" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" id="cemail" placeholder="Enter Company email" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Company Phone no.</label>
+                            <input type="tel" id="cnum" placeholder="Enter company phno" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Establishment Date</label>
+                            <input type="date" id="cdate" placeholder="Enter company establishment date" required disabled>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <a href="login.html">
+                            <span class="btnText">Back</span>
+                            </a>
+                        </div>
+                    <button class="nextBtn" id="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Company Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Street Address Line 1</label>
+                            <input type="text" id="adr1" placeholder="Address line 1" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street Address Line 2</label>
+                            <input type="text" id="adr2" placeholder="Address line 2" disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" id="city" placeholder="Enter City name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" id="state" placeholder="Enter State name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input type="type" id="country" placeholder="Enter Country name" required disabled>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pin Code</label>
+                            <input type="number" id="pin" placeholder="Enter Pin code" required disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Description about the company</span>
+
+                    <div class="form-row">
+                        <div class="form-control">
+                            <textarea id="address" name="address" rows="7" cols="70" required disabled></textarea>
+                        </div>
+                    </div>
+                    
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button type="submit" class="submit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script>
+    const form = document.querySelector("form");
+    const nextBtn = form.querySelector(".nextBtn");
+    const backBtns = document.querySelectorAll(".backBtn");
+    const allInput = form.querySelectorAll(".first input");
+
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirm-password');
+
+    confirmPassword.addEventListener('input', () => {
+        if (password.value === confirmPassword.value) {
+            document.getElementById('personal-details').style.display = 'block';
+            document.getElementById('company-details').style.display = 'block';
+            allInput.forEach(input => {
+                input.disabled = false;
+            });
+        } else {
+            document.getElementById('personal-details').style.display = 'none';
+            document.getElementById('company-details').style.display = 'none';
+            allInput.forEach(input => {
+                if (input.id !== 'username' && input.id !== 'password' && input.id !== 'confirm-password') {
+                    input.disabled = true;
+                }
+            });
+        }
+    });
+
+    function enableAddressFields() {
+        const addressFields = document.querySelectorAll(".second input, .second textarea");
+        addressFields.forEach(input => {
+            input.disabled = false;
+        });
+    }
+
+    nextBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        let valid = true;
+        allInput.forEach(input => {
+            if (input.value === "" && !input.disabled) {
+                valid = false;
+            }
+        });
+
+        if (password.value !== confirmPassword.value) {
+            alert("Passwords do not match. Please check and try again.");
+        } else if (valid) {
+            form.classList.add('secActive');
+            enableAddressFields();
+        } else {
+            form.classList.remove('secActive');
+            // Display alert message
+            alert("Please fill in all fields.");
+        }
+    });
+
+    // Add event listeners to all back buttons
+    backBtns.forEach(backBtn => {
+        backBtn.addEventListener("click", () => {
+            form.classList.remove('secActive');
+        });
+    });
+
+    </script>
+</body>
+</html>

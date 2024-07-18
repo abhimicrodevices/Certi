@@ -1,0 +1,32 @@
+[
+    {
+        "productId": "101",
+        "modelNumber": "A1001",
+        "productName": "Product A1",
+        "price": "$50.00"
+    },
+    {
+        "productId": "102",
+        "modelNumber": "A1002",
+        "productName": "Product A2",
+        "price": "$60.00"
+    },
+    {
+        "productId": "103",
+        "modelNumber": "B2001",
+        "productName": "Product B1",
+        "price": "$70.00"
+    },
+    {
+        "productId": "104",
+        "modelNumber": "B2002",
+        "productName": "Product B2",
+        "price": "$80.00"
+    },
+    {
+        "productId": "105",
+        "modelNumber": "C3001",
+        "productName": "Product C1",
+        "price": "$90.00"
+    }
+]

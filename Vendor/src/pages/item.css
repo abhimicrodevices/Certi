@@ -1,0 +1,70 @@
+/* Table Styles */
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.item-table th, .item-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.item-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button Styling in Table */
+.item-table button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.item-table button.edit-btn {
+    background-color: #007bff;
+}
+
+.item-table button.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.item-table button.delete-btn {
+    background-color: #dc3545;
+}
+
+.item-table button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.notify {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
+
+.ncont {
+    /* max-width: 1000px;  */
+    height: 5000px;
+    margin: 0px; /* Center align container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 8px; /* Example border radius */
+    background-color: #fff; /* Example background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.ncont h1 {
+    font-size: 24px; /* Example font size */
+    color: #333; /* Example text color */
+    margin-bottom: 10px; /* Example margin bottom */
+}
