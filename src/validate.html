@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="validate.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script>
+    // function showalert() {
+    //     let isSuccess = Math.random() > 0.5; 
+    
+    //     if (isSuccess) {
+    //         alert("Successfully verified");
+    //     } else {
+    //         alert("Failed");
+    //     }
+    // }
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Dashboard Panel</title>
+    <!-- <script>
+        function showSweetAlert() {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Verified Sucessfully',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        }
+    </script> -->
+    
+</head>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img width="40" height="40" src="https://img.icons8.com/external-outline-black-m-oki-orlando/40/external-certificate-authority-cyber-security-outline-outline-black-m-oki-orlando.png" alt="external-certificate-authority-cyber-security-outline-outline-black-m-oki-orlando"/>
+            </div>
+            <span class="logo_name">Certify</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="home.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="validate.html">
+                    <i class="uil uil-check-circle"></i>
+                    <span class="link-name">Verify Certificate</span>
+                </a></li>
+                <li><a href="vendor.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Vendor Management</span>
+                </a></li>
+                <li><a href="notify.html">
+                    <i class="uil uil-file-check-alt"></i>
+                    <span class="link-name">Notifications</span>
+                </a></li>
+            </ul>
+            <ul class="logout-mode">
+                <li><a href="login.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            
+        </div> 
+
+        <div class="dash-content">
+          <form class="form" id="verify-form">
+            <p class="heading">Verify</p>
+            <svg class="check" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" xml:space="preserve">  <image id="image0" width="60" height="60" x="0" y="0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAQAAACQ9RH5AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+          AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ
+          cwAACxMAAAsTAQCanBgAAAAHdElNRQfnAg0NDzN/r+StAAACR0lEQVRYw+3Yy2sTURTH8W+bNgVf
+          aGhFaxNiAoJou3FVEUQE1yL031BEROjCnf4PLlxILZSGYncuiiC48AEKxghaNGiliAojiBWZNnNd
+          xDza3pl77jyCyPzO8ubcT85wmUkG0qT539In+MwgoxQoUqDAKDn2kSNLlp3AGi4uDt9xWOUTK3xg
+          hVU2wsIZSkxwnHHGKZOxHKfBe6rUqFGlTkPaVmKGn6iYao1ZyhK2zJfY0FZ9ldBzsbMKxZwZjn/e
+          5szGw6UsD5I0W6T+hBhjUjiF7bNInjz37Ruj3igGABjbtpIo3GIh30u4ww5wr3fwfJvNcFeznhBs
+          YgXw70TYX2bY/ulkZhWfzfBbTdtrzjPFsvFI+T/L35jhp5q2owDs51VIVvHYDM9sa/LY8XdtKy1l
+          FXfM8FVN2/X2ajctZxVXzPA5TZvHpfb6CFXxkerUWTOcY11LX9w0tc20inX2mmF4qG3upnNWrOKB
+          hIXLPu3dF1x+kRWq6ysHpkjDl+7eQjatYoOCDIZF3006U0unVSxIWTgTsI3HNP3soSJkFaflMDwL
+          3OoHrph9YsPCJJ5466DyOGUHY3Epg2rWloUxnMjsNw7aw3AhMjwVhgW4HYm9FZaFQZ/bp6QeMRQe
+          hhHehWKXGY7CAuSpW7MfKUZlAUqWdJ3DcbAAB3guZl9yKC4WYLfmT4muFtgVJwvQx7T2t0mnXK6J
+          XlGGyAQvfNkaJ5JBmxnipubJ5HKDbJJsM0eY38QucSx5tJWTVHBwqDDZOzRNmn87fwDoyM4J2hRz
+          NgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wMi0xM1QxMzoxNTo1MCswMDowMKC8JaoAAAAldEVY
+          dGRhdGU6bW9kaWZ5ADIwMjMtMDItMTNUMTM6MTU6NTArMDA6MDDR4Z0WAAAAKHRFWHRkYXRlOnRp
+          bWVzdGFtcAAyMDIzLTAyLTEzVDEzOjE1OjUxKzAwOjAwIIO3fQAAAABJRU5ErkJggg=="></image>
+          </svg>
+            <div class="boxx"><br>
+            <b>Enter Certificate Code</b><br>
+            <input id="certNumber" class="input" type="text" required>
+            </div>
+            <button id="submit-btn" class="btn1" type="submit" onclick="validateCertificate()">Verify</button><br><br>
+            
+              </form>
+            
+        </div>
+    </section>
+  
+    <script src="script.js"></script>
+    <script src="validatee.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="home.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Dashboard Panel</title>
+    <script>
+        function dismissNotification() {
+          document.getElementById('notification').style.display = 'none';
+        }
+    </script>
+
+<script>
+    window.addEventListener('load', () => {
+        const notifications = ['notification1', 'notification2', 'notification3'];
+        
+        notifications.forEach((id, index) => {
+            const notification = document.getElementById(id);
+            
+            // Show the notification with a slight delay between each
+            setTimeout(() => {
+                notification.classList.add('visible');
+            }, index * 1000); // delay each notification by 1 second
+
+            // Set a timeout to hide the notification after 5 seconds
+            setTimeout(() => {
+                notification.classList.remove('visible');
+                notification.classList.add('hidden');
+            }, (index * 1000) + 5000); // hide each notification 5 seconds after it appears
+        });
+    });
+
+    function dismissNotification(id) {
+        const notification = document.getElementById(id);
+        notification.classList.remove('visible');
+        notification.classList.add('hidden');
+    }
+</script>
+</head>
+<body>
+
+   
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img width="40" height="40" src="https://img.icons8.com/external-outline-black-m-oki-orlando/40/external-certificate-authority-cyber-security-outline-outline-black-m-oki-orlando.png" alt="external-certificate-authority-cyber-security-outline-outline-black-m-oki-orlando"/>
+            </div>
+
+            <span class="logo_name">Certify</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="home.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="validate.html">
+                    <i class="uil uil-check-circle"></i>
+                    <span class="link-name">Verify Certificate</span>
+                </a></li>
+                <li><a href="vendor.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Vendor Management</span>
+                </a></li><br>
+                <li><a href="notify.html">
+                    <i class="uil uil-file-check-alt"></i>
+                    <span class="link-name">Notifications</span>
+                </a></li>
+                <!-- <li><a href="#">
+                    <i class="uil uil-chart-line"></i>
+                    <span class="link-name">Reports & Analytics</span>
+                </a></li> -->
+                <!-- <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Certificate Requests</span>
+                </a></li> -->
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="login.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            <!-- <div class="quote-container">
+                <div class="quote">
+                    Transforming complexity into simplicity
+                </div>
+                <div class="images-container">
+                    <div class="image-box">
+                        <img src="assets/block1.png" alt="Image 1">
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/block2.png" alt="Image 2">
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/block3.png" alt="Image 3">
+                    </div>
+                </div>
+            </div> -->
+    
+            <div class="search">
+                <input placeholder="Search..." type="text" id="vendorSearchInput">
+                <button type="submit" id="searchButton">Go</button>
+            </div>
+            
+            
+        </div> 
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+                
+            </div>
+            <div class="statistics">
+                <div class="stat-title">
+                    <i class="uil uil-chart-lin"></i>
+                    <span class="text"></span>
+                </div>
+                <div class="stats-boxes">
+                    <div class="stat-box">
+                        <i class="uil uil-users-alt"></i>
+                        <span class="text">Verified Vendors</span>
+                        <span class="number">10+</span>
+                    </div>
+                    <div class="stat-box">
+                        <i class="uil uil-file-alt"></i>
+                        <span class="text">Pending Requests</span>
+                        <span class="number">2+</span>
+                    </div>
+                   
+                </div>
+            </div>
+           
+        </div><br><br><br>
+        <div id="searchResults" style="color: white;font-weight: bold;font-size: large;"></div>
+    </section>
+   
+    <div class="notifications-container" id="notification1">
+        <div class="success">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div class="success-prompt-wrap">
+                    <p class="success-prompt-heading">Recently Joined</p>
+                    <div class="success-prompt-prompt">
+                        <p>Connected to Network</p>
+                    </div>
+                    <div class="success-button-container">
+                        <a href="#">
+                            <button type="button" class="success-button-main">OK</button>
+                        </a>
+                        <button type="button" class="success-button-secondary" onclick="dismissNotification('notification1')">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notifications-container1" id="notification2">
+        <div class="success">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <svg class="succes-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                   </svg>
+                </div>
+                <div class="success-prompt-wrap">
+                    <p class="success-prompt-heading">Recently Updated</p>
+                    <div class="success-prompt-prompt">
+                        <p>Stay Up-to-Date with the Latest Changes</p>
+                    </div>
+                    <div class="success-button-container">
+                        <a href="#">
+                            <button type="button" class="success-button-main">OK</button>
+                        </a>
+                        <button type="button" class="success-button-secondary" onclick="dismissNotification('notification2')">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+        <div id="network-toast" class="network-toast hidden">
+            <div class="network-toast-content">
+                <i id="network-icon" class="uil"></i>
+                <span id="network-toast-message"></span>
+            </div>
+            <button class="network-toast-close" onclick="dismissToast()">✖</button>
+        </div>
+    
+   
+
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+   
+</body>
+</html>
