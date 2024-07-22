@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor and Product Details</title>
+    <link rel="stylesheet" href="vendor.css">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <img src="logo1.jpg" alt="User Profile Picture" class="profile-pic">
+            <div>
+                <h1>De-Cart</h1>
+            </div>
+        </div>
+        <a href="login.html" class="logout">Log Out</a>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-links" id="nav-links">
+            <li class="nav-item">
+                <i class='bx bxs-home'></i>
+                <a href="vendor-details.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <i class='bx bx-notification'></i>
+                <a href="#" class="nav-link">Notification</a>
+            </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="input-box" id="input-box">
+            <input type="text" placeholder="Search...">
+            <span class="icon">
+                <i class="uil uil-search search-icon"></i>
+            </span>
+            <i class="uil uil-times close-icon"></i>
+        </div>
+    </nav>
+    <main>
+        <section class="vendor-list" id="vendor-list">
+            <!-- <h2>Vendor Names</h2> -->
+            <!-- Vendor list will be loaded here dynamically -->
+        </section>
+        <section class="vendor-details" id="vendor-details" style="display: none;">
+            <!-- <h2>Product Names</h2> -->
+            <!-- Vendor and product details will be displayed here dynamically -->
+        </section>
+    </main>
+    <script src="vendor.js"></script>
+</body>
+</html>

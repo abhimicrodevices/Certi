@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6A0DAD;
+    border-bottom: 1px solid #ddd;
+}
+
+.logout {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 4rem;
+}
+.logout:hover{
+  color: red;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #D8BFD8;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.input-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-box .icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.vendor {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: large;
+} 
+
+button.view-details {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    background-color: #3b45a3; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em; 
+}
+
+button.view-details:hover {
+    /* background-color: #0056b3; */
+    /* background-color: black; */
+    background-color: #030347; 
+}
+
+.vendor-name-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Heading style */
+.heading {
+    background-color: #ffffff; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 10px; 
+    border-radius: 5px;
+    color: #040416; 
+    padding-bottom: 0px;
+}
+
+.heading-pro{
+    background-color: #ffffff; 
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px; 
+    border-radius: 5px;
+    color: #040416; 
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* Vendor name style */
+.name {
+    padding: 20px;
+    border-radius: 5px;
+    color: #00008b; /* Dark Blue */
+}
+
+/* Product name heading */
+.product-heading {
+    background-color: #ffffff; /* White background */
+    padding: 10px;
+    border-radius: 5px;
+    color: #006400; /* Dark Green */
+    margin-bottom: 5px;
+}
+
+/* Product name style */
+.product {
+    /* background-color: #90ee90;  */
+    padding: 10px;
+    border-radius: 5px;
+    color: #006400; /* Dark Green */
+    margin-bottom: 5px; /* Space between products */
+}
+
+/* Button styles */
+.cta {
+    background-color: #ffa500; /* Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cta:hover {
+    background-color: #ff4500; /* Darker Orange */
+}
+
+.send-request {
+    background-color: #4070f4; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.send-request:hover {
+    background-color: #3050c4; /* Darker Blue */
+}
+
+.product-details {
+    background-color: #f9f9f9; /* Light background for product details */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.vendor-highlight {
+    background-color: #d1ecf1; /* Light blue highlight */
+    padding: 10px;
+    border-radius: 5px;
+    color: #0c5460; /* Dark blue text */
+}

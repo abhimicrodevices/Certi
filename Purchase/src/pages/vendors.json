@@ -1,0 +1,101 @@
+[
+    {
+        "name": "Thyag",
+        "companyName": "Thyag&Co",
+        "address": "1234 Elm Street, Springfield, IL",
+        "mobileNumber": "123-456-7890",
+        "email": "Thyag1987@gmail.com",
+        "products": [
+            {
+                "productName": "Automative Glass",
+                "productId": "P001",
+                "modelNumber": "M001",
+                "price": "Rs.20000",
+                "originalManufacturer": "AGC Automotive Phillipines, Inc"
+            },
+            {
+                "productName": "Steering Wheel",
+                "productId": "P002",
+                "modelNumber": "M002",
+                "price": "Rs.5000",
+                "originalManufacturer": "Autocarpets, Inc"
+            },
+            {
+                "productName": "Aluminium Wheels",
+                "productId": "P0024",
+                "modelNumber": "M0024",
+                "price": "Rs. 10000",
+                "originalManufacturer": "Enkei Philippines, Inc"
+            }
+        ]
+    },
+    {
+        "name": "Berkley",
+        "companyName": "Berkley Industries",
+        "address": "5678 Oak Street, Shelbyville, IL",
+        "mobileNumber": "987-654-3210",
+        "email": "berkley12@example.com",
+        "products": [
+            {
+                "productName": "Bolt",
+                "productId": "P003",
+                "modelNumber": "M003",
+                "price": "Rs. 100",
+                "originalManufacturer": "Whitehouse Hardware Store"
+            },
+            {
+                "productName": "Washer",
+                "productId": "P004",
+                "modelNumber": "M004",
+                "price": "Rs.250",
+                "originalManufacturer": "Whitehouse Hardware Store"
+            }
+        ]
+    },
+    {
+        "name": "Kuvempu",
+        "companyName": "New Phase Corp.",
+        "address": "5678 Oak Street, Shelbyville, IL",
+        "mobileNumber": "987-654-3210",
+        "email": "newphase20@example.com",
+        "products": [
+            {
+                "productName": "Electric Motor",
+                "productId": "P005",
+                "modelNumber": "M005",
+                "price": "Rs.1500",
+                "originalManufacturer": "LVDJIA Electric components"
+            },
+            {
+                "productName": "Short Nose Plate",
+                "productId": "P0040",
+                "modelNumber": "M0040",
+                "price": "Rs.2500",
+                "originalManufacturer": "Marson's Hardware & General Merchandise"
+            }
+        ]
+    },
+    {
+        "name": "Anukul",
+        "companyName": "Anukul Hardware",
+        "address": "5678 Oak Street, Shelbyville, IL",
+        "mobileNumber": "987-654-3210",
+        "email": "anukulharware@example.com",
+        "products": [
+            {
+                "productName": "LockNut",
+                "productId": "P0037",
+                "modelNumber": "M00337",
+                "price": "Rs.150",
+                "originalManufacturer": "Whitehouse Hardware Store"
+            },
+            {
+                "productName": "Bearing",
+                "productId": "P0042",
+                "modelNumber": "M0042",
+                "price": "Rs. 1000",
+                "originalManufacturer": "Whitehouse Hardware Store"
+            }
+        ]
+    }
+]
